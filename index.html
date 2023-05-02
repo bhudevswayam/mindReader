@@ -10,9 +10,6 @@
     />
     <title>Mind Reader</title>
     <style>
-      * {
-        border: 2px solid greenyellow;
-      }
       body {
         height: 100vh;
         width: 100vw;
@@ -25,7 +22,7 @@
         /* opacity: 0; */
       }
       #evaluate {
-        top: 300px;
+        top: 200px;
         position: absolute;
         z-index: 0;
       }
@@ -41,7 +38,7 @@
         />
         <form action="" method="GET">
           <div class="form-group">
-            <h4 class="card-title mt-4">Enter a number between 0-9</h4>
+            <h4 class="card-title mt-4">Think a number between 0-9</h4>
             <input
               type="number"
               class="form-control mt-3"
@@ -49,6 +46,7 @@
               placeholder="Enter Number"
               name="inputbox"
               value=""
+              required
             />
           </div>
           <div class="card-body">
@@ -65,7 +63,7 @@
         </form>
       </div>
       <div id="evaluate" class="card" style="width: 18rem;">
-        <img src="no-brain-loading.gif" alt="loading">
+        <img id="imageLoad" src="no-brain-loading.gif" alt="loading">
         <div class="card-body">
           <p class="card-text" id="loaderText">
           </p>
@@ -73,10 +71,10 @@
           type="button"
           name="button"
           value="Click"
-          onClick="clearInterval(myInterval)"
+          onClick="window.location.reload()"
           class="btn btn-info w-100"
         >
-          Evaluate
+          Evaluate again
         </button>
         </div>
       </div>
