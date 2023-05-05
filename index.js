@@ -24,7 +24,7 @@ const handleEvent = (e) => {
     }
     const my4rdTimeout = setTimeout(finalAgrument, 6000);
     function finalAgrument() {
-        document.getElementById('imageLoad').src = "https://images.idgesg.net/images/article/2017/10/brain-computer_interface_binary_mind_telepathic_computing_thinkstock_845092266-100740659-large.jpg"
+        document.getElementById('imageLoad').src = "brainImg.jpg";
         loaderText.innerHTML = `The number you were thinking was ${inputValue}`
     }
 }
